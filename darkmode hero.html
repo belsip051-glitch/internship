@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dark Mode Hero</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#1f242d;
+    color:white;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:5rem;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:900px;
+    font-size:2rem;
+    line-height:1.6;
+    color:#7c8595;
+    margin-bottom:50px;
+}
+
+.buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.btn{
+    text-decoration:none;
+    padding:18px 40px;
+    font-size:1.8rem;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.custom-btn{
+    border:2px solid #00c8ff;
+    color:#00c8ff;
+    font-weight:bold;
+}
+
+.custom-btn:hover{
+    background:#00c8ff;
+    color:#111;
+}
+
+.secondary-btn{
+    border:1px solid #fff;
+    color:#fff;
+}
+
+.secondary-btn:hover{
+    background:#fff;
+    color:#111;
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .hero p{
+        font-size:1.2rem;
+    }
+
+    .btn{
+        font-size:1.2rem;
+        padding:14px 25px;
+    }
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+    <h1>Dark mode hero</h1>
+
+    <p>
+        Quickly design and customize responsive mobile-first sites with
+        Bootstrap, the world's most popular front-end open source toolkit,
+        featuring Sass variables and mixins, responsive grid system,
+        extensive prebuilt components, and powerful JavaScript plugins.
+    </p>
+
+    <div class="buttons">
+        <a href="#" class="btn custom-btn">Custom button</a>
+        <a href="#" class="btn secondary-btn">Secondary</a>
+    </div>
+</section>
+
+</body>
+</html>
