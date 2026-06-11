@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Notification Preferences</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f1f3f6;
+}
+
+.header{
+    background:#fff;
+    padding:15px;
+    display:flex;
+    justify-content:space-around;
+    border-bottom:1px solid #ddd;
+    font-weight:bold;
+}
+
+.container{
+    display:flex;
+    gap:20px;
+    padding:20px;
+}
+
+.sidebar{
+    width:30%;
+    background:#fff;
+    padding:30px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sidebar h3{
+    color:#666;
+    margin-bottom:40px;
+}
+
+.main{
+    flex:1;
+    background:#fff;
+    padding:30px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main h2{
+    margin-bottom:25px;
+}
+
+.notification{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px 0;
+    border-bottom:1px solid #eee;
+}
+
+.left{
+    display:flex;
+    gap:15px;
+}
+
+.left input{
+    width:18px;
+    height:18px;
+}
+
+.text h4{
+    margin-bottom:5px;
+    color:#333;
+}
+
+.text p{
+    color:#888;
+    font-size:14px;
+}
+
+.right-section{
+    text-align:center;
+    margin-top:40px;
+}
+
+.circle{
+    width:120px;
+    height:120px;
+    background:red;
+    border-radius:50%;
+    margin:20px auto;
+}
+
+.warning{
+    color:#ff5c5c;
+    font-weight:bold;
+    margin:20px 0;
+}
+
+.unlock{
+    color:#666;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <span>Electronics</span>
+    <span>TVs & Appliances</span>
+    <span>Men</span>
+    <span>Women</span>
+    <span>Baby & Kids</span>
+    <span>Home & Furniture</span>
+    <span>Sports, Books & More</span>
+</div>
+
+<div class="container">
+
+    <div class="sidebar">
+        <h3>🔔 NOTIFICATION PREFERENCES</h3>
+        <p>Desktop Notifications</p>
+    </div>
+
+    <div class="main">
+        <h2>Desktop Notifications</h2>
+
+        <div class="notification">
+            <div class="left">
+                <input type="checkbox" checked>
+                <div class="text">
+                    <h4>My Orders</h4>
+                    <p>Latest updates on your orders</p>
+                </div>
+            </div>
+            <span>▼</span>
+        </div>
+
+        <div class="notification">
+            <div class="left">
+                <input type="checkbox" checked>
+                <div class="text">
+                    <h4>Reminders</h4>
+                    <p>Price Drops, Back-in-stock Products</p>
+                </div>
+            </div>
+            <span>▼</span>
+        </div>
+
+        <div class="notification">
+            <div class="left">
+                <input type="checkbox" checked>
+                <div class="text">
+                    <h4>Recommendations by Flipkart</h4>
+                    <p>Products, offers and curated content</p>
+                </div>
+            </div>
+            <span>▼</span>
+        </div>
+
+        <div class="notification">
+            <div class="left">
+                <input type="checkbox" checked>
+                <div class="text">
+                    <h4>New Offers</h4>
+                    <p>Top Deals and more</p>
+                </div>
+            </div>
+            <span>▼</span>
+        </div>
+
+        <div class="notification">
+            <div class="left">
+                <input type="checkbox" checked>
+                <div class="text">
+                    <h4>Feedback and Review</h4>
+                    <p>Rating and Reviews for your purchase</p>
+                </div>
+            </div>
+            <span>▼</span>
+        </div>
+
+        <div class="right-section">
+            <div class="circle"></div>
+
+            <p class="warning">
+                Oops! You are missing out on a lot of important
+                notifications.
+            </p>
+
+            <p class="unlock">
+                How to Unblock <br>
+                Notifications > Allow
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
